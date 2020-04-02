@@ -1,0 +1,32 @@
+.video-hero {
+    margin: 0px 0px 12px 0px;
+    margin: calculate-rem(0) rem calculate-rem(0) rem calculate-rem(12) rem calculate-rem(0) rem;
+    padding: 0px;
+    padding: calculate-rem(0) rem;
+    .row {
+        .small-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            .video-hero_player {
+                .iframe-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .columns {
+            
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.video {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    .video_border {
+        padding: 5px;
+        border-radius: 5px;
+        background: linear-gradient(white,red);
+
+        .video_tile {
+            border-radius: 5px;
+            background-color: white;
+
+            .video_img {
+                width:100%;
+                border-top: 1px solid red;
+            }
+            .video_blurb {
+                border-radius: 5px;
+                border: solid 1px grey;
+                border-top: none;
+                padding: 10px 5px;
+                font-size: 1em;
+            }
+        }
+    }
+}

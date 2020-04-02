@@ -1,0 +1,121 @@
+/*
+I've mainly just brought all the existing styles from the twitter typeahead into this file, 
+I also expanded the dearch box to fill the whole search bar nd increased some spacing
+*/
+
+.search_container {
+    position: relative;
+    transition: padding 0.15s ease-in-out;
+
+    .search {
+        width: 100%;
+        background-color: #e6e6e6;
+        padding: 8px 12px;
+
+        .row {
+            max-width: 800px;
+            margin: 0 auto;
+
+            .columns {
+                padding: 0;
+
+                .twitter-typeahead {
+                    width: 100%;
+                    border-right: none;
+                    position: relative;
+                    display: inline-block;
+
+                    pre {
+                        position: absolute;
+                        visibility: hidden;
+                        white-space: pre;
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-variant: normal;
+                        font-weight: 400;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                        text-indent: 0px;
+                        text-rendering: auto;
+                        text-transform: none;                    
+                    }
+
+                    .searchbox {
+                        height: 40px;
+                        height: calculate-rem(40)rem;
+                        padding: 8px 12px;
+                        padding: calculate-rem(8)rem calculate-rem(12)rem;
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        margin-bottom: 0;
+                        display: inline-block;
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .tt-input {
+                        width:100%;
+                        position: relative;
+                        vertical-align: top;
+                        background-color: transparent;
+                    }
+
+                    .tt-hint {
+                        width:100%;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        border-color: transparent;
+                        box-shadow: none;
+                        opacity: 1;
+                        background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+                        color: #999;
+                    }
+
+                    .tt-menu {
+                        width: calc(100% + 40px);
+                        background-color: #000;
+                        border: none;
+                        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                        position: absolute;
+                        top: 100%;
+                        left: 0px;
+                        z-index: 100;
+                        display: none;
+                    }
+                }
+            }
+
+            .searchbox_button {
+                font-size: 16px;
+                padding: 0;
+                padding: calculate-rem(7.5) rem calculate-rem(8) rem;
+                margin: 0px;
+                margin: calculate-rem(0) rem;
+                min-width: 40px;
+                min-width: calculate-rem(40) rem;
+                font-family: "Proxima Nova", sans-serif;
+                font-weight: 700;
+                border-radius: 0 4px 4px 0;
+                background-color: #c30006;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                span {
+                    display: none;
+                    padding: 0px 16px;
+                }
+
+                i {
+                    width: 40px;
+                    width: calculate-rem(40) rem;
+                    color: inherit;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
